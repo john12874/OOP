@@ -1,0 +1,21 @@
+# objects_classes.py
+
+# Define a class
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    # Method to display details
+    def display_info(self):
+        print(f"Car Brand: {self.brand}")
+        print(f"Car Model: {self.model}")
+
+
+# Create objects P
+car1 = Car("Audi", "RS7")
+car2 = Car("BMW", "M5")
+
+# Use the objects
+car1.display_info()
+car2.display_info()

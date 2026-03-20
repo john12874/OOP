@@ -1,0 +1,30 @@
+# constructors_deconstructors.py
+
+class Student:
+    
+    # Constructor 
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print(f"Constructor called: {self.name} object created")
+
+    def display(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+
+    def __del__(self):
+        print(f"Deconstructor called: {self.name} object destroyed")
+
+
+# Create objects
+student1 = Student("John", 21)
+student2 = Student("Samuel", 22)
+
+# Use methods
+student1.display()
+student2.display()
+
+# Delete object
+del student1
+
+print("End of program")

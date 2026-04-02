@@ -37,3 +37,13 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
+    
+    account = BankAccount("123456789", "John Wafula", 1000)
+
+account.deposit(500)
+account.withdraw(200)
+account.withdraw(2000)  
+
+print("Balance:", account.get_balance())
+print("Account Number:", account.account_number)
+
